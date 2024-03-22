@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CurrencyConverter {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter amount in USD: ");
+        double usdAmount = scanner.nextDouble();
+
+        // Assuming a fixed conversion rate for simplicity
+        double conversionRate = 0.85; // Example: 1 USD = 0.85 EUR
+
+        double eurAmount = usdAmount * conversionRate;
+
+        System.out.println("Amount in EUR: " + eurAmount);
+    }
+}
